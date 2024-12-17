@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--highcharts-->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <!--highchartscss-->
+  <style>
+  .highcharts-figure,
+.highcharts-data-table table {
+    min-width: 320px;
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+.highcharts-description {
+    margin: 0.3rem 10px;
+}
+
+</style>
+
+
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+  <title>Kinjizone</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <img src="image/kazuha.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid header_top_container">
+
+          <div class="contact_nav">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                T N H S
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Phone#: 0930 6320 119
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                asuncionkingabrahamjames@gmail.com
+              </span>
+            </a>
+          </div>
+          <div class="social_box">
+            <a href="https://www.facebook.com/Itsthehonoredone">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/@9-rosekingabrahamjamesasun195">
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/jammasuncion0723/?next=https%3A%2F%2Fwww.instagram.com%2Fexplore%2Fsearch%2F%3Ffbclid%3DIwY2xjawHMxiVleHRuA2FlbQIxMAABHdQuCQMg-aZcFtVH1cTcS-rrh4sL8Jyi9KFZET6AUFu1kmpf3xmDrfEGxg_aem_oFJfNcomd4UkqNgGCdqQ7g%26__coig_login%3D1">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand " href="index.html"> Kinijizone </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="HackerCRUD_Table.html">CRUD_Table</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="arts.html"> Arts </a>
+                </li>
+                
+                
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-lg-10 col-md-11 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      Kinjizone <br>
+                    
+                    </h1>
+                    <p>
+                      Take a look around my website and you'll find 
+                      out who I am, what I do, and how to contact me. I'm excited to have you here.
+                    </p>
+                    <div class="btn-box">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-lg-10 col-md-11 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      Welcome to <br>
+                  
+                    </h1>
+                    <p>
+                      You’ll also get a peek into some of my all-time favorite things.
+                       Here’s a quick rundown. Click " Read more" if you like to know what my favorite things.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-lg-10 col-md-11 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                       <br>
+                    my personal Website!
+                    </h1>
+                    <p>
+                      Hi! Click "Read More" to learn more
+                       about my self for every day life of a ICT highschool student from TNHS.
+                    </p>
+                    
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <div id="container"></div>
+  <!-- about section -->
+
+  <section class="about_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 offset-md-1">
+          <div class="detail-box pr-md-2">
+            <div class="heading_container">
+              <h2 class="">
+                About me
+              </h2>
+            </div>
+            <p class="detail_p_mt">
+              I’m thrilled to announce the launch of my brand-new website,
+              KINJIZONE space where you get to know me, "James Asuncion",
+              and the things that make me, well, me! From my hobbies to my favorite foods,
+              anime, and even my sports interests, this website is where I share all the cool stuff about
+               my life as a 17yearsold grade 12 student at Taguig National High School (TNHS).
+              So, what can you expect? Let me give you a sneak peek!.
+            </p>
+            <a href="about.html" class="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="img-box ">
+            <img src="image/me1.jpg" class="box_img" alt="about img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Itsthehonoredone</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+  <script>
+    (function (H) {
+    H.seriesTypes.pie.prototype.animate = function (init) {
+        const series = this,
+            chart = series.chart,
+            points = series.points,
+            {
+                animation
+            } = series.options,
+            {
+                startAngleRad
+            } = series;
+
+        function fanAnimate(point, startAngleRad) {
+            const graphic = point.graphic,
+                args = point.shapeArgs;
+
+            if (graphic && args) {
+
+                graphic
+                    // Set inital animation values
+                    .attr({
+                        start: startAngleRad,
+                        end: startAngleRad,
+                        opacity: 1
+                    })
+                    // Animate to the final position
+                    .animate({
+                        start: args.start,
+                        end: args.end
+                    }, {
+                        duration: animation.duration / points.length
+                    }, function () {
+                        // On complete, start animating the next point
+                        if (points[point.index + 1]) {
+                            fanAnimate(points[point.index + 1], args.end);
+                        }
+                        // On the last point, fade in the data labels, then
+                        // apply the inner size
+                        if (point.index === series.points.length - 1) {
+                            series.dataLabelsGroup.animate({
+                                opacity: 1
+                            },
+                            void 0,
+                            function () {
+                                points.forEach(point => {
+                                    point.opacity = 1;
+                                });
+                                series.update({
+                                    enableMouseTracking: true
+                                }, false);
+                                chart.update({
+                                    plotOptions: {
+                                        pie: {
+                                            innerSize: '40%',
+                                            borderRadius: 8
+                                        }
+                                    }
+                                });
+                            });
+                        }
+                    });
+            }
+        }
+
+        if (init) {
+            // Hide points on init
+            points.forEach(point => {
+                point.opacity = 0;
+            });
+        } else {
+            fanAnimate(points[0], startAngleRad);
+        }
+    };
+}(Highcharts));
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'pie'
+    },
+    title: {
+        text: 'Skill ratio'
+    },
+    subtitle: {
+        text: 'SKILLS'
+    },
+    tooltip: {
+        headerFormat: '',
+        pointFormat:
+            '<span style="color:{point.color}">\u25cf</span> ' +
+            '{point.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            borderWidth: 2,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b><br>{point.percentage}%',
+                distance: 20
+            }
+        }
+    },
+    series: [{
+        // Disable mouse tracking on load, enable after custom animation
+        enableMouseTracking: false,
+        animation: {
+            duration: 2000
+        },
+        colorByPoint: true,
+        data: [{
+            name: 'Drawing',
+            y: 32
+        }, {
+            name: 'Gaming',
+            y: 25
+        }, {
+            name: 'Coding',
+            y: 6
+        }, {
+            name: 'Multitasking',
+            y: 10
+        }, {
+            name: 'Selos',
+            y: 26
+        }]
+    }]
+});
+
+</script>
+
+</body>
+
+</html>
